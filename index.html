@@ -138,7 +138,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档<span class="badge">5</span></a>
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档<span class="badge">6</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -190,7 +190,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -235,6 +235,88 @@
 
         <div class="content index posts-expand">
           
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/10/14/React-Native-js%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/Minato252/image@master/111.jpg">
+      <meta itemprop="name" content="Minato">
+      <meta itemprop="description" content="Minato's Note">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Minato">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/14/React-Native-js%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">[React-Native.js学习日记]踩坑记录</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-14 14:38:26 / 修改时间：22:57:41" itemprop="dateCreated datePublished" datetime="2020-10-14T14:38:26+08:00">2020-10-14</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在这里记录一些指令、报过的错和用到的解决方法。</p>
+<h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3><ul>
+<li>安装特定版本react native:<br>  cmd中输入<code>npm install --save react-native@0.34.1</code></li>
+</ul>
+<h3 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h3><ol>
+<li><p>输入<code>npm install</code>初始化项目时报错 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm WARN react-native@0.42.3 requires a peer of **react@~15.4.1** but none is installed. You must install peer dependencies yourself.</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/Minato252/image/20201014144725.png" alt="npm WARN react-native@0.42.3 requires a peer of **react@~15.4.1** but none is installed. You must install peer dependencies yourself."><br><a href="https://blog.csdn.net/snake_son/article/details/53945000" target="_blank" rel="noopener">解决方法:cmd中输入<code>npm install -save react@~15.4.1</code></a></p>
+</li>
+<li><p>输入<code>react-native start</code>报错</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Invalid regular expression: &#x2F;(node_modulesr[\\\]react[\\\]dist[\\\].*|website\\node_modules\\.*|Libraries\\Relay\\relay\\tools\\relayUnstableBatchedUpdates\.js|heapCapture\\bundle\.js)$&#x2F;: Unterminated character class</span><br></pre></td></tr></table></figure>
+<p><a href="https://blog.csdn.net/weixin_44369568/article/details/102917156" target="_blank" rel="noopener">解决方法</a></p>
+</li>
+<li><p>输入<code>react-native run-android</code>报红屏错误</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Could not get BatchedBridge, make sure your bundle is packaged correctly</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/Minato252/image/ACIL%7D~VH)RE_N(J%604K%5DFIHG.png" alt="Could not get BatchedBridge, make sure your bundle is packaged correctly"><br>解决方法：发现我的安卓虚拟机没联网，之前也报过这个错误，回去看了发现上面1，2两个错。1和2都解决完再连上虚拟机网络就好了。</p>
+</li>
+<li><p>错误3之后，重新输入<code>react-native run-android</code>，报错<img src="https://cdn.jsdelivr.net/gh/Minato252/image/20201014153339.png" alt="">解决方法：发现之前<code>react-native start</code>并没有完成，而是卡在了<code>Loading dependency graph, down.</code><br><img src="https://cdn.jsdelivr.net/gh/Minato252/image/J$B7XK~MKF2C0APDM%60M9PS2.png" alt=""><br>网上有人说是因为<a href="https://blog.csdn.net/dodod2012/article/details/74225196" target="_blank" rel="noopener">端口占用问题</a>，我按照这个方法发现8081端口正是node.exe在运行，所以并不是这个问题。尝试进入<a href="http://localhost:8081/index.android.bundle?platform=android" target="_blank" rel="noopener">这个网站</a>后，cmd出现<img src="https://cdn.jsdelivr.net/gh/Minato252/image/20201014214132.png" alt=""><br>卡在了98%，<br>大概是说不存在一个文件。由于我这是github上下载的rn项目，去这个项目的评论区看到别人也有这个错，原来是因为该项目是在mac上编写的，转到windows上就出错了。手动创建报错里的文件就解决了。会连续报错三次，创建了三个文件。</p>
+</li>
+<li><p>输入<code>react-native run-android</code>出现错误:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TypeError: expected dynamic type string, but had type &#39;object&#39;</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/Minato252/image/20201014224306.png" alt=""><br><a href="https://blog.csdn.net/snoopygotoberlin/article/details/75145047" target="_blank" rel="noopener">解决方法</a><br>（查完解决方法，正苦于不知如何找到哪里调用了alert，刷新一下发现好了。）</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -373,10 +455,16 @@ export default function Cafe() {
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-10-10 14:31:00 / 修改时间：21:09:13" itemprop="dateCreated datePublished" datetime="2020-10-10T14:31:00+08:00">2020-10-10</time>
+              <time title="创建时间：2020-10-10 14:31:00" itemprop="dateCreated datePublished" datetime="2020-10-10T14:31:00+08:00">2020-10-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-14 14:37:57" itemprop="dateModified" datetime="2020-10-14T14:37:57+08:00">2020-10-14</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -408,9 +496,10 @@ export default function Cafe() {
 <h2 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h2><p>在需要新建项目的文件夹内打开cmd，输入<code>react-native init ProjectName</code></p>
 <h2 id="运行方法"><a href="#运行方法" class="headerlink" title="运行方法"></a>运行方法</h2><ol>
 <li>打开Genymotion安卓虚拟机并联网<a href="https://www.jb51.net/article/136461.htm" target="_blank" rel="noopener">(首次联网)</a></li>
-<li>在项目文件夹内打开cmd，输入<code>react-native run-android</code></li>
+<li>在项目文件夹内打开cmd，输入<code>react-native start</code>  <code>react-native run-android</code></li>
 <li>虚拟机内将按照<strong>App.js</strong>中代码显示界面。更改其中代码，双击键盘RR可刷新。</li>
 </ol>
+<p>(如果是github上下载的项目，需要先输入<code>npm install</code>再进行以上步骤）</p>
 
       
     </div>

@@ -22,20 +22,27 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}}};
   </script>
 
-  <meta name="description" content="环境搭建我使用的工具有：  Node.js最新版本 jdk1.8（其他版本无效） Genymotion（安卓虚拟机） Android Studio搭建环境具体步骤参考  新建项目在需要新建项目的文件夹内打开cmd，输入react-native init ProjectName 运行方法 打开Genymotion安卓虚拟机并联网(首次联网) 在项目文件夹内打开cmd，输入react-native s">
+  <meta name="description" content="在这里记录一些指令、报过的错和用到的解决方法。 指令 安装特定版本react native:  cmd中输入npm install --save react-native@0.34.1  报错 输入npm install初始化项目时报错  1npm WARN react-native@0.42.3 requires a peer of **react@~15.4.1** but none is i">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[React-Native.js学习日记]环境搭建+运行">
-<meta property="og:url" content="http://yoursite.com/2020/10/10/React-Native-js%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/index.html">
+<meta property="og:title" content="[React-Native.js学习日记]踩坑记录">
+<meta property="og:url" content="http://yoursite.com/2020/10/14/React-Native-js%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="Minato">
-<meta property="og:description" content="环境搭建我使用的工具有：  Node.js最新版本 jdk1.8（其他版本无效） Genymotion（安卓虚拟机） Android Studio搭建环境具体步骤参考  新建项目在需要新建项目的文件夹内打开cmd，输入react-native init ProjectName 运行方法 打开Genymotion安卓虚拟机并联网(首次联网) 在项目文件夹内打开cmd，输入react-native s">
+<meta property="og:description" content="在这里记录一些指令、报过的错和用到的解决方法。 指令 安装特定版本react native:  cmd中输入npm install --save react-native@0.34.1  报错 输入npm install初始化项目时报错  1npm WARN react-native@0.42.3 requires a peer of **react@~15.4.1** but none is i">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-10-10T06:31:00.000Z">
-<meta property="article:modified_time" content="2020-10-14T06:37:57.821Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Minato252/image/20201014144725.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Minato252/image/ACIL%7D~VH)RE_N(J%604K%5DFIHG.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Minato252/image/20201014153339.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Minato252/image/J$B7XK~MKF2C0APDM%60M9PS2.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Minato252/image/20201014214132.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Minato252/image/20201014224306.png">
+<meta property="article:published_time" content="2020-10-14T06:38:26.000Z">
+<meta property="article:modified_time" content="2020-10-14T14:57:41.110Z">
 <meta property="article:author" content="Minato">
-<meta property="article:tag" content="React-Native.js">
+<meta property="article:tag" content="keywords">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Minato252/image/20201014144725.png">
 
-<link rel="canonical" href="http://yoursite.com/2020/10/10/React-Native-js%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
+<link rel="canonical" href="http://yoursite.com/2020/10/14/React-Native-js%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">
 
 
 <script class="page-configurations">
@@ -48,7 +55,7 @@
   };
 </script>
 
-  <title>[React-Native.js学习日记]环境搭建+运行 | Minato</title>
+  <title>[React-Native.js学习日记]踩坑记录 | Minato</title>
   
 
 
@@ -177,7 +184,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境搭建"><span class="nav-number">1.</span> <span class="nav-text">环境搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建项目"><span class="nav-number">2.</span> <span class="nav-text">新建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行方法"><span class="nav-number">3.</span> <span class="nav-text">运行方法</span></a></li></ol></div>
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#指令"><span class="nav-number">1.</span> <span class="nav-text">指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#报错"><span class="nav-number">2.</span> <span class="nav-text">报错</span></a></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -243,7 +250,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/10/10/React-Native-js%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BA%9B%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/10/14/React-Native-js%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/Minato252/image@master/111.jpg">
@@ -256,7 +263,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          [React-Native.js学习日记]环境搭建+运行
+          [React-Native.js学习日记]踩坑记录
         </h1>
 
         <div class="post-meta">
@@ -265,24 +272,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-10-10 14:31:00" itemprop="dateCreated datePublished" datetime="2020-10-10T14:31:00+08:00">2020-10-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-14 14:37:57" itemprop="dateModified" datetime="2020-10-14T14:37:57+08:00">2020-10-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">学习记录</span></a>
-                </span>
+              <time title="创建时间：2020-10-14 14:38:26 / 修改时间：22:57:41" itemprop="dateCreated datePublished" datetime="2020-10-14T14:38:26+08:00">2020-10-14</time>
             </span>
 
           
@@ -296,20 +288,30 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p>我使用的工具有：</p>
-<ul>
-<li>Node.js最新版本</li>
-<li>jdk1.8（其他版本无效）</li>
-<li>Genymotion（安卓虚拟机）</li>
-<li>Android Studio<br>搭建环境<a href="https://reactnative.cn/docs/getting-started.html" target="_blank" rel="noopener">具体步骤参考</a></li>
+        <p>在这里记录一些指令、报过的错和用到的解决方法。</p>
+<h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3><ul>
+<li>安装特定版本react native:<br>  cmd中输入<code>npm install --save react-native@0.34.1</code></li>
 </ul>
-<h2 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h2><p>在需要新建项目的文件夹内打开cmd，输入<code>react-native init ProjectName</code></p>
-<h2 id="运行方法"><a href="#运行方法" class="headerlink" title="运行方法"></a>运行方法</h2><ol>
-<li>打开Genymotion安卓虚拟机并联网<a href="https://www.jb51.net/article/136461.htm" target="_blank" rel="noopener">(首次联网)</a></li>
-<li>在项目文件夹内打开cmd，输入<code>react-native start</code>  <code>react-native run-android</code></li>
-<li>虚拟机内将按照<strong>App.js</strong>中代码显示界面。更改其中代码，双击键盘RR可刷新。</li>
+<h3 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h3><ol>
+<li><p>输入<code>npm install</code>初始化项目时报错 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm WARN react-native@0.42.3 requires a peer of **react@~15.4.1** but none is installed. You must install peer dependencies yourself.</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/Minato252/image/20201014144725.png" alt="npm WARN react-native@0.42.3 requires a peer of **react@~15.4.1** but none is installed. You must install peer dependencies yourself."><br><a href="https://blog.csdn.net/snake_son/article/details/53945000" target="_blank" rel="noopener">解决方法:cmd中输入<code>npm install -save react@~15.4.1</code></a></p>
+</li>
+<li><p>输入<code>react-native start</code>报错</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Invalid regular expression: &#x2F;(node_modulesr[\\\]react[\\\]dist[\\\].*|website\\node_modules\\.*|Libraries\\Relay\\relay\\tools\\relayUnstableBatchedUpdates\.js|heapCapture\\bundle\.js)$&#x2F;: Unterminated character class</span><br></pre></td></tr></table></figure>
+<p><a href="https://blog.csdn.net/weixin_44369568/article/details/102917156" target="_blank" rel="noopener">解决方法</a></p>
+</li>
+<li><p>输入<code>react-native run-android</code>报红屏错误</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Could not get BatchedBridge, make sure your bundle is packaged correctly</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/Minato252/image/ACIL%7D~VH)RE_N(J%604K%5DFIHG.png" alt="Could not get BatchedBridge, make sure your bundle is packaged correctly"><br>解决方法：发现我的安卓虚拟机没联网，之前也报过这个错误，回去看了发现上面1，2两个错。1和2都解决完再连上虚拟机网络就好了。</p>
+</li>
+<li><p>错误3之后，重新输入<code>react-native run-android</code>，报错<img src="https://cdn.jsdelivr.net/gh/Minato252/image/20201014153339.png" alt="">解决方法：发现之前<code>react-native start</code>并没有完成，而是卡在了<code>Loading dependency graph, down.</code><br><img src="https://cdn.jsdelivr.net/gh/Minato252/image/J$B7XK~MKF2C0APDM%60M9PS2.png" alt=""><br>网上有人说是因为<a href="https://blog.csdn.net/dodod2012/article/details/74225196" target="_blank" rel="noopener">端口占用问题</a>，我按照这个方法发现8081端口正是node.exe在运行，所以并不是这个问题。尝试进入<a href="http://localhost:8081/index.android.bundle?platform=android" target="_blank" rel="noopener">这个网站</a>后，cmd出现<img src="https://cdn.jsdelivr.net/gh/Minato252/image/20201014214132.png" alt=""><br>卡在了98%，<br>大概是说不存在一个文件。由于我这是github上下载的rn项目，去这个项目的评论区看到别人也有这个错，原来是因为该项目是在mac上编写的，转到windows上就出错了。手动创建报错里的文件就解决了。会连续报错三次，创建了三个文件。</p>
+</li>
+<li><p>输入<code>react-native run-android</code>出现错误:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TypeError: expected dynamic type string, but had type &#39;object&#39;</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/Minato252/image/20201014224306.png" alt=""><br><a href="https://blog.csdn.net/snoopygotoberlin/article/details/75145047" target="_blank" rel="noopener">解决方法</a><br>（查完解决方法，正苦于不知如何找到哪里调用了alert，刷新一下发现好了。）</p>
+</li>
 </ol>
-<p>(如果是github上下载的项目，需要先输入<code>npm install</code>再进行以上步骤）</p>
 
     </div>
 
@@ -318,9 +320,6 @@
     
 
       <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/React-Native-js/" rel="tag"># React-Native.js</a>
-          </div>
 
         
 
@@ -328,13 +327,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/07/30/%E5%97%AF%E5%97%AF/" rel="prev" title="嗯嗯">
-      <i class="fa fa-chevron-left"></i> 嗯嗯
+    <a href="/2020/10/10/React-Native-js%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" rel="prev" title="[React-Native.js学习日记]基本操作（props、state）">
+      <i class="fa fa-chevron-left"></i> [React-Native.js学习日记]基本操作（props、state）
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/10/10/React-Native-js%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" rel="next" title="[React-Native.js学习日记]基本操作（props、state）">
-      [React-Native.js学习日记]基本操作（props、state） <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
