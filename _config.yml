@@ -88,7 +88,7 @@ keywords: "学习笔记"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2024
 
 # icon between year and author @Footer
 authoricon: heart
@@ -354,7 +354,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night
 
 
 # ---------------------------------------------------------------
@@ -737,3 +737,9 @@ images: assets/images
 
 # Theme version
 version: 5.1.1
+
+# comment plugin
+disqus:
+  enable: true
+  shortname: https-minato252-github-io
+  count: true
