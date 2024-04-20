@@ -85,7 +85,7 @@ keywords: "学习笔记"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: rss
 
 # Specify the date when the site was setup
 since: 2024
@@ -381,8 +381,8 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: https-minato252-github-io
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
@@ -738,8 +738,3 @@ images: assets/images
 # Theme version
 version: 5.1.1
 
-# comment plugin
-disqus:
-  enable: true
-  shortname: https-minato252-github-io
-  count: true
