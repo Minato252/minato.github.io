@@ -101,7 +101,7 @@
 
 .footer-inner {
   width: $main-desktop;
-  padding-left: 260px;
+  padding-right: 260px;
 
   @include tablet() {
     width: auto;
@@ -132,3 +132,4 @@
     padding-right: 0;
   }
 }
+
