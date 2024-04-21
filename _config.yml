@@ -381,7 +381,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: https-minato252-github-io
   count: true
   # hide comments (visitors need to click to load the comments)
@@ -436,12 +436,12 @@ changyan:
 
 # Support for gitalk comments system.
 gitalk:
-  enable: false
-  clientID: # 54730ddf7b9420460c03
-  clientSecret: # c05684701b25ff1c19ea0c01ce4d80c125e0707d
-  repo: # colingpt.github.io
-  owner: # colingpt
-  admin: # colingpt
+  enable: true
+  clientID: 891bd9d651f90146d6f0
+  clientSecret: 908a2884cc08b7b7a763fdbe17ba8f85d0d51098
+  repo: minato252.github.io
+  owner: Minato252
+  admin: Minato252
 
 # Baidu Share
 # Available value:
