@@ -1,5 +1,5 @@
 ---
-title: Go语言学习日记-入门
+title: Go语言学习日记~入门1~HelloWorld
 category: Go
 tags: 
  - Go
@@ -70,7 +70,6 @@ go: to add module requirements and sums:
 PS D:\go\project\hello world> go mod tidy
 PS D:\go\project\hello world>
 ```
-
 
 ## 相关工具
 
